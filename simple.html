@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+  const n = 500;
+  S = [];
+  	S[1] = 0; // 1 - не простое число
+  	// заполняем решето единицами
+  	for(k=2; k<=500; k++)
+  		S[k]=1;
+
+  	for(k=2; k*k<=500; k++){
+  		// если k - простое (не вычеркнуто)
+  		if(S[k]==1){
+  			// то вычеркнем кратные k
+  			for(l=k*k; l<=500; l+=k){
+  				S[l]=0;
+          console.log(k) ;
+          
+  				}
+
+  			}
+
+  		}
+
+  </script>
+</body>
+</html>
